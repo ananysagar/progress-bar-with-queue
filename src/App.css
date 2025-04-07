@@ -1,0 +1,30 @@
+.outer {
+    width: 550px;
+    height: 30px;
+    border: 1px solid #000;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .filler {
+    height: 100%;
+    width: 0%;
+    background-color: lightgreen;
+  }
+  
+  .filler.active {
+    animation: fill 2s linear forwards;
+  }
+  
+  .filler.done {
+    width: 100%;
+    background-color: lightgreen;
+  }
+  
+  @keyframes fill {
+    to {
+      width: 100%;
+    }
+  }
+  
